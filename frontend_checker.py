@@ -162,7 +162,7 @@ def load_func_name_similarity(in_path="temp/func_name_similarity"):
         for line in f.readlines():
             func_name_split = line.strip().split()
             if len(func_name_split) > 2:
-                func_name = "".join(func_name_split[:-1])
+                func_name = " ".join(func_name_split[:-1])
                 cos = func_name_split[-1]
             else:
                 func_name,cos = func_name_split
